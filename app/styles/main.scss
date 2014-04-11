@@ -4,6 +4,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
+
+.nav .nav-pills {
+  margin-bottom: 0.5px;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -128,9 +132,14 @@ font-size:45px;
   font-weight:bold;
 }
 
+.letter-tween img{
+  width: 200px;
+}
+
+
+
 .isotope-item {
   z-index: 2;
-
 }
 
 .isotope-hidden.isotope-item {

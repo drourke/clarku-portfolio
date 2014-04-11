@@ -12,7 +12,6 @@ $(window).load(function(){
       queue: false
     }
   });
-
   $('.portfolioFilter a').click(function(){
     $('.portfolioFilter .current').removeClass('current');
     $(this).addClass('current');
