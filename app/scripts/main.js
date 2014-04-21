@@ -1,9 +1,12 @@
+"use strict";
+
 console.log('\'Allo \'Allo!');
 /** 
  * From http://codepen.io/creotip/pen/kFbdq
  */
 $(window).load(function(){
   var $container = $('.portfolioContainer');
+
   $container.isotope({
     filter: '*',
     animationOptions: {
@@ -13,23 +16,27 @@ $(window).load(function(){
     }
   });
   $('.portfolioFilter a').click(function(){
+    console.log(this);
+
     $('.portfolioFilter .current').removeClass('current');
     $(this).addClass('current');
 
+    
     var selector = $(this).attr('data-filter');
+    
     $container.isotope({
       filter: selector,
       animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
+        duration : 750,
+        easing   : 'linear',
+        queue    : false
       }
-     });
-     return false;
-  }); 
+    });
+    return false;
+  });
 });
 
 
-(function($) {
-  $(document).foundation();
-})(jQuery);
+// (function($) {
+//   $(document).foundation();
+// })(jQuery);
