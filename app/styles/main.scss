@@ -5,122 +5,66 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // endbower
 
 @import "compass/css3/images";
+@import "seperator";
 
+.section-dtor {
+  background: #fff;
+  color: #d3d3d3;
+}
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
-  @include background-image(linear-gradient(#2c3e50, #7f8c8d));
-}
-
-/* Custom page header and footer */
-.header {
-  h1 {
-    color: #fff; 
-  }
-}
-.footer {
+  background: #2980b9;
   color: #fff;
-  padding-top  : 25px;
-  padding-left : 10px;
+  // @include background-image(linear-gradient(#2c3e50, #7f8c8d));
 }
 
-.portfolioContainer {
-  background-color: #95a5a6;
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  margin: 0;
+  width: 100%;
 }
 
-.portfolio-row {
-  background-color: #fff;
-  margin-bottom : 20px;
-
+section {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-#dtor-gif {
-  float: right;
-  max-width: 35%;
+.container > header,
+.codrops-top {
+  color: #fff;
+  background: #3498db;
 }
 
-#dtor-thumbnails {
-  margin-top    : 1.25em;
-  margin-bottom : 1.0em;
-  span {
-    padding-left  : 5px;
-    padding-right : 5px;
-  }
+.container > header {
+  // margin-left: -15px;
+  // margin-right: -15px;
+  margin: 0 -15px;
+  padding: 5.5em 2em 7em;
+  text-align: center;
 }
 
-/* For larger screens */
-@media all and (min-width: 764px) {
-  body {
-    padding-top    : 20px;
-    padding-bottom : 20px;
-  }
-  .header {
-    margin-bottom: 30px;
-    h1 {
-      font-size: 5em;
-    }
-    h4 {
-      font-size    : 1.5em;
-      margin-top   : 15px;
-      padding-left : 4px;
-    }
-  }
-
-  .container {
-    max-width: 730px;
-  }
-  .portfolioContainer {
-    border-radius : 5px;
-    margin-top    : 50px;
-    padding       : 30px;
-  }
-  .portfolio-row {
-    margin-left  : 2px;
-    margin-right : 2px;  
-    padding      : 10px; 
-    h2 {
-      font-size     : 2.75em;
-      margin-bottom : 18px;
-    }
-  }
+.container > header h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
 }
 
-/* For smaller screens */
-@media all and (max-width: 764px) {
-  body {
-    padding-top: 20px;
-  }
-  .header {
-    margin-left: 10px;
-    h1 {
-      font-size: 2.45em;
-    }
-    h4 {
-      font-size    : 1.25em;
-      padding-left : 0.095em;
-    }
-  }
-  .container {
-    padding: 0;
-  }
-  .portfolioContainer {
-    background-color : rgba(0, 0, 0, 0);
-    padding          : 0;
-    margin-top       : 30px;
-    width            : 100%;
-  }
-  .row {
-    margin: 15px 0;
-  }
-  .portfolio-row {
-    width         : 100%;
-    padding-top   : 0;
-    padding-left  : 0;
-    padding-right : 15px;
-    h2 {
-      font-size     : 1.95em;
-      margin-bottom : 15px;
-    }
-    font-size: 1em;
-  }
+.container > header span {
+  display: block;
+  font-size: 60%;
+  opacity: 0.7;
+  padding: 0 0 0.6em 0.1em;
 }
