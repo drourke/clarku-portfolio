@@ -1,6 +1,6 @@
 clarku-portfolio
 ================
 
-Portfolio site for Motion Graphics
+Portfolio website made as part of a final project for Motion Graphics.
 
-Site created as part of the final project for the course Motion Graphics, to showcase work from the course of the semester.
+Link to live version of the site: http://students.clarku.edu/~drourke/
