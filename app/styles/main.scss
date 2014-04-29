@@ -6,7 +6,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 @import "compass/css3/images";
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   @include background-image(linear-gradient(#2c3e50, #7f8c8d));
@@ -29,14 +28,22 @@ body {
 }
 
 .portfolio-row {
-  background-color: #fff;
-  margin-bottom : 20px;
+  background-color : #fff;
+  margin-bottom    : 20px;
 
 }
 
 #dtor-gif {
-  float: right;
-  max-width: 35%;
+  float     : right;
+  max-width : 35%;
+}
+
+#anim-antonym-vid {
+  float     : right;
+  max-width : 45%;
+  min-width : 200px;
+  min-height: 200px;
+  margin: 5px;
 }
 
 #dtor-thumbnails {
@@ -67,7 +74,7 @@ body {
   }
 
   .container {
-    max-width: 730px;
+    max-width: 800px;
   }
   .portfolioContainer {
     border-radius : 5px;
